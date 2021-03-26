@@ -1,0 +1,59 @@
+/*para PC/ Laptop*/
+body {
+	background-color: #faf3e0;
+}
+
+@media (min-width: 900px) {
+	.container {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 1fr;
+	}
+}
+
+/*para tablets*/
+@media (max-width: 900px) {
+	body { 
+		background-color: #eabf9f;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr) ;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+/*para teléfonos*/
+@media (max-width: 600px) {
+	
+	body { 
+		background-color: #b68973;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: (4, 1fr);
+	}
+}
+
+/*para smartwach*/
+@media (max-width: 300px) {
+	body { 
+		background-color: #1e212d;
+	}
+	.container {
+		display: grid;
+		grid-template-rows: repeat(8, 1fr);
+		grid-template-columns: 1fr;
+	}
+}
+
+.grid-item {
+	margin: 3px;
+}
+
+.grid-item img {
+	width: 192px;
+	height: 192px;
+	object-fit: cover;
+}
